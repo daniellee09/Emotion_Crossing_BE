@@ -1,0 +1,5 @@
+# created by virtualenv automatically
+db.sqlite3
+venv
+migrations
+.DS_Store
