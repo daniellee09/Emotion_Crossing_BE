@@ -14,7 +14,7 @@ class Character(models.Model):
 class User(models.Model):
     user_id = models.UUIDField(primary_key = True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=20)
-    profile_character = models.ForeignKey('Character', null=False, blank=False, on_delete=models.PROTECT)
+    profile_character = models.ForeignKey(Character, null=False, blank=False, on_delete=models.PROTECT)
     
     def __str__(self):
         return f"{self.name} ({self.user_id})"
