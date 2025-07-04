@@ -8,7 +8,7 @@ class myForest(models.Model):
 			
     class Meta:
         unique_together = (('user_id', 'tree_id'),) # 중복방지
-        verbose_name = "MyForest"
+        verbose_name = "MyForest"   
 
     def __str__(self):
-        return f"{self.user.name} in Tree {self.tree.tree_id}"
+        return f"{self.user_id.name} in Tree {self.tree_id.tree_id}"

@@ -21,4 +21,4 @@ class UserSerializer(serializers.ModelSerializer):
             'profile_character',
             'profile_character_id',
         )
-        read_only_fields = ('user_id') # user_id는 수정 불가 
+        read_only_fields = ('user_id',) # user_id는 수정 불가 
