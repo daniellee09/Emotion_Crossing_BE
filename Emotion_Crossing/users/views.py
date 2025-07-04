@@ -9,7 +9,7 @@ from .models import User
 
 # POST /signup
 class SignUpApiView(CreateAPIView):
-    quaryset = User.objects.all()
+    queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
     
