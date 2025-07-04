@@ -1,6 +1,7 @@
 from rest_framework import serializers
-from .models import Post, Tree
-from .serializers import UserSerializer
+from .models import Post
+from trees.models import Tree
+from users.serializers import UserSerializer
 
 class TreeSerializer(serializers.ModelSerializer):
     class Meata:
