@@ -22,4 +22,5 @@ class Post(models.Model):
         verbose_name_plural = "Posts"
 
     def __str__(self):
-        return f"{self.user.name} @ {self.created_at:%Y-%m-%d %H:%M}"
+        ## self.user -> self.user_id로 수정 
+        return f"{self.user_id.name} @ {self.created_at:%Y-%m-%d %H:%M}"

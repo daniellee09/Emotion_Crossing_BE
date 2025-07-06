@@ -13,6 +13,6 @@ class MyForestViewSet(viewsets.ReadOnlyModelViewSet):
     
     def get_queryset(self):
         # 요청 헤더의 user_id를 기반으로 해당 사용자의 숲을 반환
-        return myForest.objects.filter(user=self.request.user)
+        return myForest.objects.filter(user_id=self.request.user)
         
         

@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Post
+from users.models import User
 from trees.models import Tree
 from users.serializers import UserSerializer
 
@@ -8,17 +9,19 @@ class TreeSerializer(serializers.ModelSerializer):
         model = Tree
         fields = '__all__'
 
+## 수정사항
+## 클라이언트가 넘긴 PK(UUID)를 받아서 그에 대응하는 Tree 인스턴스를 찾아 모델의 FK 필드에 넣어 주는 PrimaryKeyRelatedField를 사용해야 오류가 안 남
 class PostSerializer(serializers.ModelSerializer):
-    user = UserSerializer(source='user_id', read_only=True)
-    user_id = serializers.UUIDField( #사용자의 UUID를 받는 필드
+    user = UserSerializer(read_only=True) ## source='user_id' 지정 시 불필요한 중복 지정 오류로 에러 발생해서 제거함 
+    user_id = serializers.PrimaryKeyRelatedField( #사용자의 UUID를 받는 필드
+        queryset = User.objects.all(),
         write_only=True,
-        source='user_id', # 이부분으로 사용자가 보낸 UUID와 post모델의 user_id가 내부적으로 맵핑됨
         help_text="작성자 UUID"
     )
-    tree = TreeSerializer(source='tree_id', read_only=True)
-    tree_id = serializers.UUIDField(
+    tree = TreeSerializer(read_only=True) ## 여기도 source='tree_id' 제거함 
+    tree_id = serializers.PrimaryKeyRelatedField(
+        queryset = Tree.objects.all(),
         write_only=True,
-        source='tree_id',
         help_text="나무 UUID"
     )
     
