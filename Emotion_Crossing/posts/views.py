@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from rest_framework.generics import CreateAPIView, RetrieveDestroyAPIView
+from rest_framework.generics import ListCreateAPIView, RetrieveDestroyAPIView
 from users.authentication import UserIDAuthentication
 from .serializers import PostSerializer
 from .models import Post
@@ -10,11 +10,22 @@ from rest_framework.permissions import IsAuthenticated
 from django.db.models import F
 
 
-class PostCreateView(CreateAPIView):
-    queryset = Post.objects.all()
+class PostListCreateView(ListCreateAPIView):
+    """
+    GET  /posts/ → 로그인한 사용자가 쓴 전체 포스트 조회
+    POST /posts/ → 새 포스트 생성
+    """
     serializer_class = PostSerializer
     authentication_classes = [UserIDAuthentication]
     permission_classes = [IsAuthenticated]
+    
+    def get_queryset(self):
+        # 로그인한 사용자(request.user) 포스트만 리턴
+        return Post.objects.filter(user_id=self.request.user)
+
+    def perform_create(self, serializer):
+        # 저장할 때 user_id 필드에도 현재 사용자 지정
+        serializer.save(user_id=self.request.user)
 
 class PostDetailView(RetrieveDestroyAPIView):
     queryset = Post.objects.all()
