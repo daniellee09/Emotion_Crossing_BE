@@ -2,10 +2,36 @@ from django.shortcuts import render, get_object_or_404
 from rest_framework.generics import CreateAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.permissions import AllowAny
 from .authentication import UserIDAuthentication
-from .serializers import UserSerializer
-from .models import User
+from .serializers import UserSerializer, CharacterSerializer
+from .models import User, Character
+from rest_framework.views import APIView
+from rest_framework import status
+from rest_framework.response import Response
+
 
 # Create your views here.
+class SignUpCharacterApiView(APIView):
+    authentication_classes = [UserIDAuthentication]
+    permission_classes = [AllowAny]
+    
+    def get(self, request):
+            """GET /users/signup/characters - 캐릭터 전체 목록 반환"""
+            characters = Character.objects.all()
+            serializer = CharacterSerializer(characters, many=True)
+            return Response(serializer.data)
+                            
+    def patch(self, request):
+        """PATCH /users/signup/characters - 사용자의 캐릭터 선택"""
+        user = request.user
+        serializer = UserSerializer(user, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+
+        selected_character = user.profile_character  # FK로 연결된 Character 객체
+        return Response({
+            "message": "캐릭터가 선택되었습니다.",
+            "image_url": selected_character.image_url
+        }, status=status.HTTP_200_OK)
 
 # POST /signup
 class SignUpApiView(CreateAPIView):

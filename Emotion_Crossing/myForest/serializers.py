@@ -4,7 +4,7 @@ from posts.serializers import TreeSerializer
 
 class MyForestSerializer(serializers.ModelSerializer):
     # 읽을 때만, MyForest.tree(FK)와 연결된 Tree 객체를 중첩해서 보여줌 
-    tree = TreeSerializer(read_only=True)
+    tree = TreeSerializer(source='tree_id', read_only=True)
 
     class Meta:
         model  = myForest
