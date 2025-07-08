@@ -1,10 +1,18 @@
+from django.templatetags.static import static
 from rest_framework import serializers
 from .models import User, Character
 
 class CharacterSerializer(serializers.ModelSerializer):
+    image_url = serializers.SerializerMethodField()
+    
     class Meta:
         model = Character
         fields = ('character_id', 'name', 'image_url')
+        
+    def get_image_url(self, obj):
+        # static('images/characters/xxx.png') → '/static/images/characters/xxx.png'
+        rel = f'images/characters/{obj.image_url}'
+        return self.context['request'].build_absolute_uri(static(rel))        
 
 class UserSerializer(serializers.ModelSerializer):
     profile_character = CharacterSerializer(read_only=True)

@@ -17,13 +17,22 @@ class SignUpCharacterApiView(APIView):
     def get(self, request):
             """GET /users/signup/characters - 캐릭터 전체 목록 반환"""
             characters = Character.objects.all()
-            serializer = CharacterSerializer(characters, many=True)
+            serializer = CharacterSerializer(
+                characters,
+                many=True,
+                context={'request': request}
+            )
             return Response(serializer.data)
                             
     def patch(self, request):
         """PATCH /users/signup/characters - 사용자의 캐릭터 선택"""
         user = request.user
-        serializer = UserSerializer(user, data=request.data, partial=True)
+        serializer = UserSerializer(
+            user,
+            data=request.data,
+            partial=True,
+            context={'request': request}
+        )
         serializer.is_valid(raise_exception=True)
         serializer.save()
 
