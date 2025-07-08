@@ -11,7 +11,7 @@ class CharacterSerializer(serializers.ModelSerializer):
         
     def get_image_url(self, obj):
         # static('images/characters/xxx.png') → '/static/images/characters/xxx.png'
-        rel = f'static/images/characters/{obj.image_url}'
+        rel = f'images/characters/{obj.image_url}'
         return self.context['request'].build_absolute_uri(static(rel))        
 
 class UserSerializer(serializers.ModelSerializer):
