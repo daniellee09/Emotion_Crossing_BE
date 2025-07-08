@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ta)o^l+!dkp1px-r@27&(3=x)$n49x%-eq$0n&t818av&!hg4y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     ## drf
+    'corsheaders', # cors 위반 방지 
     'rest_framework', 
     
     ## 우리 api
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware', # cors 위반 방지 
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -56,6 +58,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
 ]
 
 ROOT_URLCONF = 'Emotion_Crossing.urls'
