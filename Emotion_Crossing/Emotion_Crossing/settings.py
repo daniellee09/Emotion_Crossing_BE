@@ -15,10 +15,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / 'static', # .../Emotion_Crossing_BE/static
-]
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -28,7 +25,7 @@ SECRET_KEY = 'django-insecure-ta)o^l+!dkp1px-r@27&(3=x)$n49x%-eq$0n&t818av&!hg4y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -42,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     ## drf
-    'corsheaders', # cors 위반 방지 
     'rest_framework', 
     
     ## 우리 api
@@ -51,9 +47,10 @@ INSTALLED_APPS = [
     'trees',
     'myForest',
 ]
+# 서비스할 수 있는 호스트의 목록을 지정
+ALLOWED_HOST = ['*']
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware', # cors 위반 방지 
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -61,10 +58,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
-
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
 ]
 
 ROOT_URLCONF = 'Emotion_Crossing.urls'
@@ -134,6 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / "static",]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
