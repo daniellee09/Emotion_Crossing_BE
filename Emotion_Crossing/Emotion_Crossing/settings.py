@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-
+from corsheaders.defaults import default_headers
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -64,7 +64,15 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "http://emotioncrossing.p-e.kr",
+]
+
+CORS_ALLOWED_METHODS = [
+    ...
+]
+
+CORS_ALLOWED_HEADERS = list(default_headers) + [
+    "X-USER-ID",
 ]
 
 ROOT_URLCONF = 'Emotion_Crossing.urls'
