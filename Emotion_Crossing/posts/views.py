@@ -6,7 +6,7 @@ from .models import Post
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.db.models import F
 
 
@@ -17,7 +17,7 @@ class PostListCreateView(ListCreateAPIView):
     """
     serializer_class = PostSerializer
     authentication_classes = [UserIDAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
     
     def get_queryset(self):
         return Post.objects.all()  # ✅ 사용자 관계없이 전체 조회
