@@ -13,7 +13,7 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="기록 생성시간", help_text="작성 시각 자동 기록")
     like_count = models.IntegerField(default=0, verbose_name="공감 개수", help_text="👍 공감 수")
     cheer_count = models.IntegerField(default=0, verbose_name="위로 개수", help_text="💙 위로 수")
-    post_longitude = models.FloatField(verbose_name="기록의 경도",help_text="정확한 메시지 경도",null=True,blank=True)
+    post_latitude = models.FloatField(verbose_name="기록의 경도",help_text="정확한 메시지 경도",null=True,blank=True)
     post_longitude = models.FloatField(verbose_name="기록의 경도", help_text="정확한 메시지 경도",null=True,blank=True)
     is_private = models.BooleanField(default=False, verbose_name="비공개 여부", help_text="True면 비공개, False면 공개")
 
@@ -24,4 +24,4 @@ class Post(models.Model):
 
     def __str__(self):
         ## self.user -> self.user_id로 수정 
-        return f"{self.user_id.name} @ {self.created_at:%Y-%m-%d %H:%M}"
+        return f"{self.user_id.name} | {self.post_id} | {self.created_at:%Y-%m-%d %H:%M}"
