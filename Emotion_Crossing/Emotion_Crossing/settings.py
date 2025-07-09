@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os 
-from corsheaders.defaults import default_headers
+from corsheaders.defaults import default_headers, default_methods
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -71,9 +71,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
 ]
 
-CORS_ALLOWED_METHODS = [
-    ...
-]
+CORS_ALLOWED_METHODS = list(default_methods)
 
 CORS_ALLOWED_HEADERS = list(default_headers) + [
     "X-USER-ID",

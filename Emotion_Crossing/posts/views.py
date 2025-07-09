@@ -17,10 +17,10 @@ class PostListCreateView(ListCreateAPIView):
     """
     serializer_class = PostSerializer
     authentication_classes = [UserIDAuthentication]
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
     
     def get_queryset(self):
-        return Post.objects.all()  # ✅ 사용자 관계없이 전체 조회
+        return Post.objects.all()  # 사용자 관계없이 전체 조회
 
     def perform_create(self, serializer):
         serializer.save(user_id=self.request.user)
