@@ -14,9 +14,10 @@ class MyForestViewSet(ViewSet):
         tree_ids = (
             Post.objects.filter(user_id=user)
             .values_list('tree_id', flat=True)
-            .distinct()
         )
-        if not tree_ids:
+
+        unique_tree_ids = list(set(tree_ids))
+        if not unique_tree_ids:
             return Response({"message": "글을 작성한 나무가 없습니다", "tree_id": []})
 
-        return Response({"tree_id": list(tree_ids)})
+        return Response({"tree_id": unique_tree_ids})
