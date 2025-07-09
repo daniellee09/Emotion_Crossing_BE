@@ -12,25 +12,23 @@ from django.db.models import F
 
 class PostListCreateView(ListCreateAPIView):
     """
-    GET  /posts/ → 해당 나무에 적힌 기록들 조회 
-    POST /posts/ → 새 포스트 생성
+    GET  /posts/posts → 전체 게시글 조회
+    POST /posts/posts → 로그인한 사용자로 새 게시글 작성
     """
     serializer_class = PostSerializer
     authentication_classes = [UserIDAuthentication]
     permission_classes = [IsAuthenticated]
     
     def get_queryset(self):
-        # 해당된 나무의 기록들 조회 
-        return Post.objects.all() # 고정된 나무(인하대) 
+        return Post.objects.all()  # ✅ 사용자 관계없이 전체 조회
 
     def perform_create(self, serializer):
-        # 저장할 때 user_id 필드에도 현재 사용자 지정
         serializer.save(user_id=self.request.user)
 
 class PostDetailView(RetrieveDestroyAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-    lookup_field = 'post_id' # post/<uuid:post_id> 의 id와 내부적으로 맵핑
+    lookup_field = 'post_id'
     authentication_classes = [UserIDAuthentication]
     permission_classes = [IsAuthenticated]
 

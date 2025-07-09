@@ -1,0 +1,1182 @@
+*** Starting uWSGI 2.0.30 (64bit) on [Wed Jul  9 05:44:50 2025] ***
+compiled with version: 13.3.0 on 08 July 2025 06:41:08
+os: Linux-6.8.0-1029-aws #31-Ubuntu SMP Wed Apr 23 18:42:41 UTC 2025
+nodename: ip-172-31-47-192
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/myvenv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+your processes number limit is 3749
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/uwsgi.sock fd 3
+Python version: 3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]
+PEP 405 virtualenv detected: /home/ubuntu/myvenv
+Set PythonHome to /home/ubuntu/myvenv
+Python main interpreter initialized at 0x7bc1562a39e8
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7bc1562a39e8 pid: 9854 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9854)
+spawned uWSGI worker 1 (pid: 9855, cores: 1)
+[pid: 9855|app: 0|req: 1/1] 118.37.174.134 () {46 vars in 963 bytes} [Wed Jul  9 14:45:01 2025] GET /admin/trees/tree/add/ => generated 13424 bytes in 189 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 2/2] 118.37.174.134 () {42 vars in 764 bytes} [Wed Jul  9 14:45:01 2025] GET /admin/jsi18n/ => generated 9860 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 3/3] 118.37.174.134 () {44 vars in 917 bytes} [Wed Jul  9 14:45:03 2025] GET /admin/ => generated 10927 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 4/4] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 14:45:05 2025] GET /admin/users/user/ => generated 16714 bytes in 41 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 5/5] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 14:45:05 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 6/6] 118.37.174.134 () {44 vars in 917 bytes} [Wed Jul  9 14:45:06 2025] GET /admin/ => generated 10927 bytes in 13 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 7/7] 118.37.174.134 () {44 vars in 934 bytes} [Wed Jul  9 14:45:07 2025] GET /admin/users/character/ => generated 15830 bytes in 21 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 8/8] 118.37.174.134 () {42 vars in 765 bytes} [Wed Jul  9 14:45:07 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 9/9] 118.37.174.134 () {44 vars in 917 bytes} [Wed Jul  9 14:45:08 2025] GET /admin/ => generated 10927 bytes in 13 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 10/10] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 14:45:09 2025] GET /admin/trees/tree/ => generated 11359 bytes in 15 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 11/11] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 14:45:09 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 12/12] 118.37.174.134 () {44 vars in 943 bytes} [Wed Jul  9 14:45:10 2025] GET /admin/trees/tree/add/ => generated 13424 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 13/13] 118.37.174.134 () {42 vars in 764 bytes} [Wed Jul  9 14:45:10 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 14/14] 118.37.174.134 () {52 vars in 1139 bytes} [Wed Jul  9 14:45:21 2025] POST /admin/trees/tree/add/ => generated 0 bytes in 13 msecs (HTTP/1.1 302) 12 headers in 788 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 15/15] 118.37.174.134 () {46 vars in 1281 bytes} [Wed Jul  9 14:45:21 2025] GET /admin/trees/tree/ => generated 13208 bytes in 13 msecs (HTTP/1.1 200) 11 headers in 577 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 16/16] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 14:45:21 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 17/17] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 14:45:39 2025] GET /admin/trees/tree/199983e7-963b-4527-81ed-0f3762aa1b59/change/ => generated 13903 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 18/18] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 14:45:39 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Internal Server Error: /posts/posts
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: posts_post
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/posts/views.py", line 28, in perform_create
+    serializer.save(user_id=self.request.user)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: posts_post
+[pid: 9855|app: 0|req: 19/19] 118.37.174.134 () {46 vars in 672 bytes} [Wed Jul  9 14:45:49 2025] POST /posts/posts => generated 209792 bytes in 70 msecs (HTTP/1.1 500) 7 headers in 243 bytes (1 switches on core 0)
+[pid: 9855|app: 0|req: 20/20] 118.37.174.134 () {48 vars in 814 bytes} [Wed Jul  9 14:47:02 2025] OPTIONS /posts/posts => generated 0 bytes in 0 msecs (HTTP/1.1 200) 7 headers in 355 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9855|app: 0|req: 21/21] 118.37.174.134 () {46 vars in 801 bytes} [Wed Jul  9 14:47:02 2025] POST /posts/posts => generated 96 bytes in 3 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9855|app: 0|req: 22/22] 118.37.174.134 () {46 vars in 801 bytes} [Wed Jul  9 14:47:02 2025] POST /posts/posts => generated 96 bytes in 2 msecs (HTTP/1.1 403) 9 headers in 312 bytes (2 switches on core 0)
+Not Found: /
+[pid: 9855|app: 0|req: 23/23] 44.249.105.145 () {36 vars in 483 bytes} [Wed Jul  9 14:47:17 2025] GET / => generated 2614 bytes in 5 msecs (HTTP/1.1 404) 7 headers in 229 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/uwsgi.sock)
+running /home/ubuntu/myvenv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.30 (64bit) on [Wed Jul  9 14:47:29 2025] ***
+compiled with version: 13.3.0 on 08 July 2025 06:41:08
+os: Linux-6.8.0-1029-aws #31-Ubuntu SMP Wed Apr 23 18:42:41 UTC 2025
+nodename: ip-172-31-47-192
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+detected binary path: /home/ubuntu/myvenv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+your processes number limit is 3749
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/uwsgi.sock fd 3
+Python version: 3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]
+PEP 405 virtualenv detected: /home/ubuntu/myvenv
+Set PythonHome to /home/ubuntu/myvenv
+Python main interpreter initialized at 0x758380ea39e8
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x758380ea39e8 pid: 9854 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 9854)
+spawned uWSGI worker 1 (pid: 9871, cores: 1)
+*** Starting uWSGI 2.0.30 (64bit) on [Wed Jul  9 05:47:34 2025] ***
+compiled with version: 13.3.0 on 08 July 2025 06:41:08
+os: Linux-6.8.0-1029-aws #31-Ubuntu SMP Wed Apr 23 18:42:41 UTC 2025
+nodename: ip-172-31-47-192
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/myvenv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+your processes number limit is 3749
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/uwsgi.sock fd 3
+Python version: 3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]
+PEP 405 virtualenv detected: /home/ubuntu/myvenv
+Set PythonHome to /home/ubuntu/myvenv
+Python main interpreter initialized at 0x74c8ca8a39e8
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x74c8ca8a39e8 pid: 9874 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9874)
+spawned uWSGI worker 1 (pid: 9875, cores: 1)
+[pid: 9875|app: 0|req: 1/1] 118.37.174.134 () {46 vars in 672 bytes} [Wed Jul  9 14:47:39 2025] POST /posts/posts => generated 231 bytes in 62 msecs (HTTP/1.1 201) 8 headers in 259 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 2/2] 118.37.174.134 () {44 vars in 957 bytes} [Wed Jul  9 14:47:52 2025] GET /admin/ => generated 11394 bytes in 78 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 3/3] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 14:47:53 2025] GET /admin/posts/post/ => generated 12843 bytes in 33 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 4/4] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 14:47:53 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 5/5] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 14:47:54 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21390 bytes in 40 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 6/6] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 14:47:54 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 7/7] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 14:49:53 2025] GET /posts/posts => generated 96 bytes in 2 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 8/8] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 14:49:53 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 9/9] 118.37.174.134 () {44 vars in 957 bytes} [Wed Jul  9 14:50:15 2025] GET /admin/ => generated 11394 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 10/10] 118.37.174.134 () {46 vars in 671 bytes} [Wed Jul  9 14:50:42 2025] GET /posts/posts => generated 233 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 254 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 11/11] 118.37.174.134 () {44 vars in 617 bytes} [Wed Jul  9 14:50:54 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 8 headers in 260 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 12/12] 118.37.174.134 () {46 vars in 671 bytes} [Wed Jul  9 14:50:57 2025] GET /posts/posts => generated 233 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 254 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 13/13] 118.37.174.134 () {46 vars in 783 bytes} [Wed Jul  9 14:52:15 2025] POST /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 14/14] 118.37.174.134 () {46 vars in 783 bytes} [Wed Jul  9 14:52:51 2025] POST /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 15/15] 118.37.174.134 () {46 vars in 783 bytes} [Wed Jul  9 14:55:58 2025] POST /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 16/16] 118.37.174.134 () {46 vars in 783 bytes} [Wed Jul  9 14:56:08 2025] POST /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 17/17] 118.37.174.134 () {46 vars in 783 bytes} [Wed Jul  9 14:58:34 2025] POST /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 18/18] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 15:01:06 2025] GET /admin/trees/tree/ => generated 12913 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 19/19] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:01:06 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 20/20] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:01:07 2025] GET /admin/trees/tree/199983e7-963b-4527-81ed-0f3762aa1b59/change/ => generated 13903 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 21/21] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:01:07 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 22/22] 118.37.174.134 () {46 vars in 783 bytes} [Wed Jul  9 15:01:22 2025] POST /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 23/23] 118.37.174.134 () {46 vars in 783 bytes} [Wed Jul  9 15:09:28 2025] POST /posts/posts => generated 96 bytes in 49 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 24/24] 118.37.174.134 () {44 vars in 957 bytes} [Wed Jul  9 15:12:35 2025] GET /admin/ => generated 11394 bytes in 24 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 25/25] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 15:12:36 2025] GET /admin/posts/post/ => generated 12843 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 26/26] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:12:36 2025] GET /admin/jsi18n/ => generated 9860 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 27/27] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:12:37 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21390 bytes in 27 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 28/28] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:12:37 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 29/29] 118.37.174.134 () {42 vars in 850 bytes} [Wed Jul  9 15:15:24 2025] GET /admin/ => generated 11394 bytes in 13 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 30/30] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 15:15:27 2025] GET /admin/posts/post/ => generated 12843 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 31/31] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:15:27 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 32/32] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:15:28 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21390 bytes in 25 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 33/33] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:15:28 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 34/34] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 15:15:32 2025] GET /admin/posts/post/ => generated 12843 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 35/35] 118.37.174.134 () {42 vars in 850 bytes} [Wed Jul  9 15:15:32 2025] GET /admin/ => generated 11394 bytes in 12 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 36/36] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 15:15:34 2025] GET /admin/posts/post/ => generated 12843 bytes in 15 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 37/37] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:15:34 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 38/38] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:15:36 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 39/39] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:15:36 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 40/40] 118.37.174.134 () {44 vars in 943 bytes} [Wed Jul  9 15:15:36 2025] GET /admin/posts/post/add/ => generated 20983 bytes in 22 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 41/41] 118.37.174.134 () {42 vars in 764 bytes} [Wed Jul  9 15:15:36 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 42/42] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:15:37 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 43/43] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:15:37 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 44/44] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:15:41 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 45/45] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:15:41 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 46/46] 118.37.174.134 () {52 vars in 1139 bytes} [Wed Jul  9 15:15:49 2025] POST /admin/posts/post/add/ => generated 0 bytes in 22 msecs (HTTP/1.1 302) 12 headers in 786 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 47/47] 118.37.174.134 () {46 vars in 1279 bytes} [Wed Jul  9 15:15:49 2025] GET /admin/posts/post/ => generated 13478 bytes in 15 msecs (HTTP/1.1 200) 11 headers in 577 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 48/48] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:15:50 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 49/49] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:15:51 2025] GET /admin/posts/post/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/change/ => generated 21345 bytes in 24 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 50/50] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:15:51 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 51/51] 118.37.174.134 () {44 vars in 939 bytes} [Wed Jul  9 15:15:53 2025] GET /admin/posts/post/ => generated 13221 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 52/52] 118.37.174.134 () {44 vars in 943 bytes} [Wed Jul  9 15:15:54 2025] GET /admin/posts/post/add/ => generated 20983 bytes in 21 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 53/53] 118.37.174.134 () {44 vars in 939 bytes} [Wed Jul  9 15:15:56 2025] GET /admin/users/user/ => generated 16714 bytes in 25 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 54/54] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:15:56 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 55/55] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:15:57 2025] GET /admin/users/user/ec5f9220-a910-4335-8dfe-7e536e0d8204/change/ => generated 15518 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 56/56] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:15:57 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 57/57] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:15:59 2025] GET /admin/posts/post/ => generated 13221 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 58/58] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:15:59 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 59/59] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:16:00 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21390 bytes in 23 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 60/60] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:16:00 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 61/61] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:16:02 2025] GET /admin/posts/post/ => generated 13221 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 62/62] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:16:02 2025] GET /admin/users/user/ec5f9220-a910-4335-8dfe-7e536e0d8204/change/ => generated 15518 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 63/63] 118.37.174.134 () {44 vars in 939 bytes} [Wed Jul  9 15:16:04 2025] GET /admin/users/user/ => generated 16714 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 64/64] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:16:10 2025] GET /admin/users/user/f17920d6-0a3f-4f32-ac29-0e92ef0ee1be/change/ => generated 15478 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 65/65] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:16:10 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 66/66] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:16:13 2025] GET /admin/posts/post/ => generated 13221 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 67/67] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:16:13 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 68/68] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:16:14 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21390 bytes in 23 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 69/69] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:16:14 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Method Not Allowed: /users/signup
+[pid: 9875|app: 0|req: 70/70] 118.37.174.134 () {38 vars in 507 bytes} [Wed Jul  9 15:17:51 2025] GET /users/signup => generated 68 bytes in 1 msecs (HTTP/1.1 405) 8 headers in 266 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 71/71] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:18:48 2025] GET /admin/posts/post/ => generated 13221 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 72/72] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:18:49 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21390 bytes in 24 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 73/73] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:18:49 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 74/74] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:18:57 2025] GET /admin/posts/post/ => generated 13221 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 75/75] 118.37.174.134 () {46 vars in 1010 bytes} [Wed Jul  9 15:21:22 2025] GET /admin/posts/post/ => generated 13221 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 76/76] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:21:22 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 77/77] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:21:23 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21390 bytes in 22 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 78/78] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:21:23 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 79/79] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:21:26 2025] GET /admin/users/user/ => generated 16714 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 80/80] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:21:26 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 81/81] 118.37.174.134 () {44 vars in 957 bytes} [Wed Jul  9 15:25:41 2025] GET /admin/ => generated 11803 bytes in 12 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 82/82] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 15:25:42 2025] GET /admin/posts/post/ => generated 13221 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 83/83] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:25:42 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 84/84] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:25:43 2025] GET /admin/posts/post/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/change/ => generated 21345 bytes in 23 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 85/85] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:25:43 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 86/86] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 15:25:46 2025] GET /admin/posts/post/ => generated 13221 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 87/87] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:25:47 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21390 bytes in 22 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 88/88] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:25:47 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 89/89] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 15:25:51 2025] GET /admin/posts/post/ => generated 13221 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 90/90] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:26:28 2025] GET /admin/users/user/f17920d6-0a3f-4f32-ac29-0e92ef0ee1be/change/ => generated 15478 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 91/91] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:26:28 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 92/92] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:26:29 2025] GET /admin/users/user/ => generated 16714 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 93/93] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:26:32 2025] GET /admin/users/user/ => generated 16714 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 94/94] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:26:32 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 95/95] 118.37.174.134 () {46 vars in 955 bytes} [Wed Jul  9 15:26:59 2025] GET /admin/posts/post/ => generated 13221 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 96/96] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:26:59 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 97/97] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:27:00 2025] GET /admin/posts/post/ => generated 13221 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 98/98] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:27:00 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 99/99] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:27:00 2025] GET /admin/posts/post/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/change/ => generated 21345 bytes in 23 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 100/100] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:27:00 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 101/101] 118.37.174.134 () {44 vars in 989 bytes} [Wed Jul  9 15:27:04 2025] GET /admin/users/character/ => generated 15830 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 102/102] 118.37.174.134 () {42 vars in 765 bytes} [Wed Jul  9 15:27:04 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 103/103] 118.37.174.134 () {44 vars in 940 bytes} [Wed Jul  9 15:27:06 2025] GET /admin/users/user/ => generated 16714 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 104/104] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:27:06 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 105/105] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:27:07 2025] GET /admin/trees/tree/ => generated 12913 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 106/106] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:27:07 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 107/107] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:27:08 2025] GET /admin/trees/tree/199983e7-963b-4527-81ed-0f3762aa1b59/change/ => generated 13903 bytes in 15 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 9875|app: 0|req: 108/108] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:27:08 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 9875|app: 0|req: 109/109] 118.37.174.134 () {46 vars in 783 bytes} [Wed Jul  9 15:27:43 2025] POST /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+...brutally killing workers...
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/uwsgi.sock)
+running /home/ubuntu/myvenv/bin/uwsgi
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/uwsgi.sock)
+running /home/ubuntu/myvenv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.30 (64bit) on [Wed Jul  9 15:28:08 2025] ***
+compiled with version: 13.3.0 on 08 July 2025 06:41:08
+os: Linux-6.8.0-1029-aws #31-Ubuntu SMP Wed Apr 23 18:42:41 UTC 2025
+nodename: ip-172-31-47-192
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+detected binary path: /home/ubuntu/myvenv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+your processes number limit is 3749
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/uwsgi.sock fd 3
+*** Starting uWSGI 2.0.30 (64bit) on [Wed Jul  9 15:28:08 2025] ***
+compiled with version: 13.3.0 on 08 July 2025 06:41:08
+os: Linux-6.8.0-1029-aws #31-Ubuntu SMP Wed Apr 23 18:42:41 UTC 2025
+nodename: ip-172-31-47-192
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+detected binary path: /home/ubuntu/myvenv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+your processes number limit is 3749
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/uwsgi.sock fd 3
+Python version: 3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]
+PEP 405 virtualenv detected: /home/ubuntu/myvenv
+Set PythonHome to /home/ubuntu/myvenv
+Python version: 3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]
+PEP 405 virtualenv detected: /home/ubuntu/myvenv
+Set PythonHome to /home/ubuntu/myvenv
+Python main interpreter initialized at 0x7612caea39e8
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+Python main interpreter initialized at 0x7456c5aa39e8
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7612caea39e8 pid: 9874 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 9874)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7456c5aa39e8 pid: 9854 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 9854)
+spawned uWSGI worker 1 (pid: 16577, cores: 1)
+spawned uWSGI worker 1 (pid: 16578, cores: 1)
+*** Starting uWSGI 2.0.30 (64bit) on [Wed Jul  9 06:28:20 2025] ***
+compiled with version: 13.3.0 on 08 July 2025 06:41:08
+os: Linux-6.8.0-1029-aws #31-Ubuntu SMP Wed Apr 23 18:42:41 UTC 2025
+nodename: ip-172-31-47-192
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/myvenv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+your processes number limit is 3749
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/uwsgi.sock fd 3
+Python version: 3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]
+PEP 405 virtualenv detected: /home/ubuntu/myvenv
+Set PythonHome to /home/ubuntu/myvenv
+Python main interpreter initialized at 0x71a25a6a39e8
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x71a25a6a39e8 pid: 16581 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16581)
+spawned uWSGI worker 1 (pid: 16582, cores: 1)
+[pid: 16582|app: 0|req: 1/1] 118.37.174.134 () {46 vars in 1054 bytes} [Wed Jul  9 15:28:23 2025] GET /admin/trees/tree/199983e7-963b-4527-81ed-0f3762aa1b59/change/ => generated 13921 bytes in 236 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 2/2] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:28:24 2025] GET /admin/jsi18n/ => generated 9860 bytes in 5 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Internal Server Error: /admin/posts/post/
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: posts_post.is_private
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2163, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: posts_post.is_private
+[pid: 16582|app: 0|req: 3/3] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:28:25 2025] GET /admin/posts/post/ => generated 164857 bytes in 72 msecs (HTTP/1.1 500) 7 headers in 251 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 4/4] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:28:27 2025] GET /admin/trees/tree/199983e7-963b-4527-81ed-0f3762aa1b59/change/ => generated 13921 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+Internal Server Error: /admin/posts/post/
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: posts_post.is_private
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2163, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: posts_post.is_private
+[pid: 16582|app: 0|req: 5/5] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:28:28 2025] GET /admin/posts/post/ => generated 164857 bytes in 55 msecs (HTTP/1.1 500) 7 headers in 251 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 6/6] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:28:29 2025] GET /admin/trees/tree/199983e7-963b-4527-81ed-0f3762aa1b59/change/ => generated 13921 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+Internal Server Error: /posts/posts
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table posts_post has no column named is_private
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/posts/views.py", line 28, in perform_create
+    serializer.save(user_id=self.request.user)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table posts_post has no column named is_private
+[pid: 16582|app: 0|req: 7/7] 118.37.174.134 () {46 vars in 672 bytes} [Wed Jul  9 15:29:09 2025] POST /posts/posts => generated 209254 bytes in 76 msecs (HTTP/1.1 500) 7 headers in 243 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 8/8] 118.37.174.134 () {46 vars in 1054 bytes} [Wed Jul  9 15:29:50 2025] GET /admin/trees/tree/199983e7-963b-4527-81ed-0f3762aa1b59/change/ => generated 13921 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 9/9] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:29:50 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 10/10] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:29:51 2025] GET /admin/posts/post/ => generated 13221 bytes in 29 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 11/11] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:29:51 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 12/12] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:29:52 2025] GET /admin/posts/post/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/change/ => generated 21198 bytes in 29 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 13/13] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:29:52 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 14/14] 118.37.174.134 () {46 vars in 672 bytes} [Wed Jul  9 15:29:59 2025] POST /posts/posts => generated 204 bytes in 10 msecs (HTTP/1.1 201) 8 headers in 259 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 15/15] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:30:00 2025] GET /admin/posts/post/ => generated 13604 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 16/16] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:30:00 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 17/17] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:30:01 2025] GET /admin/posts/post/16fecd68-489a-44c8-8dee-6c5dd5cc8669/change/ => generated 21213 bytes in 25 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 18/18] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:30:01 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 19/19] 118.37.174.134 () {46 vars in 671 bytes} [Wed Jul  9 15:30:08 2025] GET /posts/posts => generated 616 bytes in 6 msecs (HTTP/1.1 200) 8 headers in 254 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 20/20] 118.37.174.134 () {46 vars in 966 bytes} [Wed Jul  9 15:30:20 2025] GET /admin/users/user/ => generated 16714 bytes in 22 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 21/21] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:30:20 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 22/22] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:30:23 2025] GET /admin/posts/post/ => generated 13604 bytes in 21 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 23/23] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:30:23 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 24/24] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:30:24 2025] GET /admin/posts/post/16fecd68-489a-44c8-8dee-6c5dd5cc8669/change/ => generated 21213 bytes in 26 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 25/25] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:30:24 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 26/26] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:30:26 2025] GET /admin/posts/post/ => generated 13604 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 27/27] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:30:27 2025] GET /admin/users/user/ => generated 16714 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 28/28] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:30:28 2025] GET /admin/posts/post/ => generated 13604 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 29/29] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:30:29 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 30/30] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:30:29 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21238 bytes in 25 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 31/31] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:30:29 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Wed Jul  9 15:30:31 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /admin/posts/post/ (ip 118.37.174.134) !!!
+Wed Jul  9 15:30:31 2025 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /admin/posts/post/ (118.37.174.134)
+OSError: write error
+[pid: 16582|app: 0|req: 32/32] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:30:31 2025] GET /admin/posts/post/ => generated 0 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 0 bytes (0 switches on core 0)
+Wed Jul  9 15:30:31 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /admin/users/user/ (ip 118.37.174.134) !!!
+Wed Jul  9 15:30:31 2025 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /admin/users/user/ (118.37.174.134)
+OSError: write error
+[pid: 16582|app: 0|req: 33/33] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:30:31 2025] GET /admin/users/user/ => generated 0 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 0 bytes (0 switches on core 0)
+[pid: 16582|app: 0|req: 34/34] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:30:31 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21238 bytes in 24 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 35/35] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:30:33 2025] GET /admin/posts/post/ => generated 13604 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 36/36] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:30:34 2025] GET /admin/users/user/f17920d6-0a3f-4f32-ac29-0e92ef0ee1be/change/ => generated 15478 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 37/37] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:30:35 2025] GET /admin/posts/post/ => generated 13604 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 38/38] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:30:36 2025] GET /admin/posts/post/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/change/ => generated 21198 bytes in 24 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 39/39] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:30:36 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 40/40] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:30:40 2025] GET /admin/posts/post/ => generated 13604 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 41/41] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:30:42 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21238 bytes in 24 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 42/42] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:30:42 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 43/43] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:30:44 2025] GET /admin/posts/post/ => generated 13604 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 44/44] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:30:44 2025] GET /admin/users/user/f17920d6-0a3f-4f32-ac29-0e92ef0ee1be/change/ => generated 15478 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 45/45] 118.37.174.134 () {38 vars in 505 bytes} [Wed Jul  9 15:30:54 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 8 headers in 260 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 46/46] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:31:11 2025] GET /admin/trees/tree/ => generated 12925 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 47/47] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:31:11 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 48/48] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:31:12 2025] GET /admin/posts/post/ => generated 13604 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 49/49] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:31:12 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Internal Server Error: /admin/myForest/myforest/
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myForest_myforest
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2024, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 867, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/views/main.py", line 146, in __init__
+    self.get_results(request)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/contrib/admin/views/main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/paginator.py", line 110, in count
+    return c()
+           ^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 604, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 644, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 626, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myForest_myforest
+[pid: 16582|app: 0|req: 50/50] 118.37.174.134 () {44 vars in 949 bytes} [Wed Jul  9 15:31:12 2025] GET /admin/myForest/myforest/ => generated 185565 bytes in 57 msecs (HTTP/1.1 500) 7 headers in 251 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 51/51] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:31:13 2025] GET /admin/posts/post/ => generated 13604 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 52/52] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:31:14 2025] GET /admin/users/user/ => generated 16714 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 53/53] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:31:14 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 54/54] 118.37.174.134 () {44 vars in 945 bytes} [Wed Jul  9 15:31:15 2025] GET /admin/users/character/ => generated 15830 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 55/55] 118.37.174.134 () {42 vars in 765 bytes} [Wed Jul  9 15:31:15 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 56/56] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:31:15 2025] GET /admin/users/user/a713cdab-2d4d-41f0-b5ce-1d77609ca023/change/ => generated 15466 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 57/57] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:31:15 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 58/58] 118.37.174.134 () {44 vars in 940 bytes} [Wed Jul  9 15:31:15 2025] GET /admin/users/user/ => generated 16714 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 59/59] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:31:15 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 60/60] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:31:16 2025] GET /admin/trees/tree/ => generated 12925 bytes in 15 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 61/61] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:31:17 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 62/62] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:31:18 2025] GET /admin/posts/post/ => generated 13604 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 63/63] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:31:18 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 64/64] 118.37.174.134 () {40 vars in 556 bytes} [Wed Jul  9 15:31:30 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 8 headers in 260 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 65/65] 118.37.174.134 () {40 vars in 559 bytes} [Wed Jul  9 15:31:36 2025] GET /posts/posts => generated 616 bytes in 6 msecs (HTTP/1.1 200) 8 headers in 254 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 66/66] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:31:52 2025] GET /admin/users/user/ => generated 16714 bytes in 21 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 67/67] 118.37.174.134 () {44 vars in 617 bytes} [Wed Jul  9 15:31:56 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 8 headers in 260 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 68/68] 118.37.174.134 () {46 vars in 671 bytes} [Wed Jul  9 15:31:58 2025] GET /posts/posts => generated 616 bytes in 6 msecs (HTTP/1.1 200) 8 headers in 254 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 69/69] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:32:38 2025] GET /posts/posts => generated 96 bytes in 2 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 70/70] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:32:38 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 71/71] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:32:41 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 72/72] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:32:41 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 73/73] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:32:53 2025] GET /admin/users/user/ => generated 16714 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 74/74] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:32:54 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 75/75] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:33:31 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 76/76] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:33:31 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 77/77] 118.37.174.134 () {38 vars in 505 bytes} [Wed Jul  9 15:33:50 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 8 headers in 260 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 78/78] 118.37.174.134 () {40 vars in 559 bytes} [Wed Jul  9 15:33:55 2025] GET /posts/posts => generated 616 bytes in 6 msecs (HTTP/1.1 200) 8 headers in 254 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 79/79] 118.37.174.134 () {42 vars in 744 bytes} [Wed Jul  9 15:34:04 2025] GET /users/signup/characters => generated 1508 bytes in 3 msecs (HTTP/1.1 200) 9 headers in 308 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 80/80] 118.37.174.134 () {42 vars in 744 bytes} [Wed Jul  9 15:34:04 2025] GET /users/signup/characters => generated 1508 bytes in 2 msecs (HTTP/1.1 200) 9 headers in 308 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 81/81] 118.37.174.134 () {48 vars in 816 bytes} [Wed Jul  9 15:34:08 2025] OPTIONS /users/signup => generated 0 bytes in 0 msecs (HTTP/1.1 200) 7 headers in 355 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 82/82] 118.37.174.134 () {46 vars in 803 bytes} [Wed Jul  9 15:34:08 2025] POST /users/signup => generated 258 bytes in 8 msecs (HTTP/1.1 201) 9 headers in 308 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 83/83] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:34:10 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 84/84] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:34:11 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 85/85] 118.37.174.134 () {46 vars in 966 bytes} [Wed Jul  9 15:34:11 2025] GET /admin/users/user/ => generated 17129 bytes in 21 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 86/86] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:34:11 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 87/87] 118.37.174.134 () {46 vars in 1010 bytes} [Wed Jul  9 15:34:14 2025] GET /admin/users/user/ => generated 17129 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 88/88] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:34:15 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 89/89] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:34:27 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 90/90] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:34:27 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 91/91] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:34:35 2025] GET /admin/trees/tree/ => generated 12925 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 92/92] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:34:35 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 93/93] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:34:42 2025] GET /admin/trees/tree/199983e7-963b-4527-81ed-0f3762aa1b59/change/ => generated 13921 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 94/94] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:34:42 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 95/95] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:34:51 2025] GET /admin/trees/tree/ => generated 12925 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 96/96] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:34:51 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 97/97] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:34:54 2025] GET /admin/users/user/ => generated 17129 bytes in 21 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 98/98] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:35:04 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 99/99] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:35:04 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 100/100] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:35:14 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 101/101] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:35:14 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 102/102] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:35:15 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 103/103] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:35:16 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 104/104] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:35:24 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 105/105] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:35:24 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 106/106] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:35:45 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 107/107] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:35:45 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 108/108] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:36:11 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 109/109] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:36:11 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 110/110] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:36:14 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 111/111] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:36:14 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 112/112] 118.37.174.134 () {44 vars in 943 bytes} [Wed Jul  9 15:36:55 2025] GET /admin/users/user/add/ => generated 15053 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 113/113] 118.37.174.134 () {42 vars in 764 bytes} [Wed Jul  9 15:36:55 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 114/114] 118.37.174.134 () {44 vars in 979 bytes} [Wed Jul  9 15:36:58 2025] GET /admin/posts/post/ => generated 13604 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 115/115] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:36:58 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 116/116] 118.37.174.134 () {46 vars in 745 bytes} [Wed Jul  9 15:37:46 2025] GET /posts/posts/16fecd68-489a-44c8-8dee-6c5dd5cc8669 => generated 204 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 117/117] 118.37.174.134 () {46 vars in 748 bytes} [Wed Jul  9 15:38:03 2025] DELETE /posts/posts/16fecd68-489a-44c8-8dee-6c5dd5cc8669 => generated 0 bytes in 9 msecs (HTTP/1.1 204) 7 headers in 230 bytes (1 switches on core 0)
+Method Not Allowed: /posts/posts
+[pid: 16582|app: 0|req: 118/118] 118.37.174.134 () {40 vars in 562 bytes} [Wed Jul  9 15:38:05 2025] DELETE /posts/posts => generated 71 bytes in 2 msecs (HTTP/1.1 405) 8 headers in 269 bytes (1 switches on core 0)
+Not Found: /posts/posts/16fecd68-489a-44c8-8dee-6c5dd5cc8669
+[pid: 16582|app: 0|req: 119/119] 118.37.174.134 () {46 vars in 745 bytes} [Wed Jul  9 15:38:08 2025] GET /posts/posts/16fecd68-489a-44c8-8dee-6c5dd5cc8669 => generated 45 bytes in 3 msecs (HTTP/1.1 404) 8 headers in 262 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 120/120] 118.37.174.134 () {40 vars in 559 bytes} [Wed Jul  9 15:38:09 2025] GET /posts/posts => generated 411 bytes in 5 msecs (HTTP/1.1 200) 8 headers in 254 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 121/121] 118.37.174.134 () {46 vars in 671 bytes} [Wed Jul  9 15:38:12 2025] GET /posts/posts => generated 411 bytes in 5 msecs (HTTP/1.1 200) 8 headers in 254 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 122/122] 118.37.174.134 () {42 vars in 669 bytes} [Wed Jul  9 15:38:36 2025] POST /posts/posts/034c200d-3c54-4146-be00-d4e4e4ebc04d/like => generated 16 bytes in 10 msecs (HTTP/1.1 200) 8 headers in 242 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 123/123] 118.37.174.134 () {46 vars in 758 bytes} [Wed Jul  9 15:38:37 2025] POST /posts/posts/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/cheer => generated 17 bytes in 10 msecs (HTTP/1.1 200) 8 headers in 242 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 124/124] 118.37.174.134 () {46 vars in 758 bytes} [Wed Jul  9 15:38:39 2025] POST /posts/posts/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/cheer => generated 17 bytes in 10 msecs (HTTP/1.1 200) 8 headers in 242 bytes (1 switches on core 0)
+Method Not Allowed: /posts/posts/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/cheer
+[pid: 16582|app: 0|req: 125/125] 118.37.174.134 () {46 vars in 757 bytes} [Wed Jul  9 15:38:42 2025] GET /posts/posts/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/cheer => generated 68 bytes in 2 msecs (HTTP/1.1 405) 8 headers in 258 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 126/126] 118.37.174.134 () {44 vars in 939 bytes} [Wed Jul  9 15:38:44 2025] GET /admin/posts/post/ => generated 13221 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 127/127] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:38:44 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 128/128] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:38:46 2025] GET /admin/posts/post/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/change/ => generated 21308 bytes in 25 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 129/129] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:38:47 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 130/130] 118.37.174.134 () {46 vars in 745 bytes} [Wed Jul  9 15:38:47 2025] GET /posts/posts/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91 => generated 190 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 131/131] 118.37.174.134 () {44 vars in 939 bytes} [Wed Jul  9 15:38:48 2025] GET /admin/posts/post/ => generated 13221 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 132/132] 118.37.174.134 () {44 vars in 943 bytes} [Wed Jul  9 15:38:48 2025] GET /admin/users/user/add/ => generated 15053 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 133/133] 118.37.174.134 () {44 vars in 939 bytes} [Wed Jul  9 15:38:50 2025] GET /admin/posts/post/ => generated 13221 bytes in 17 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 134/134] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:38:50 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 135/135] 118.37.174.134 () {44 vars in 1023 bytes} [Wed Jul  9 15:38:51 2025] GET /admin/posts/post/034c200d-3c54-4146-be00-d4e4e4ebc04d/change/ => generated 21348 bytes in 25 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 136/136] 118.37.174.134 () {42 vars in 804 bytes} [Wed Jul  9 15:38:51 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 137/137] 118.37.174.134 () {46 vars in 756 bytes} [Wed Jul  9 15:38:53 2025] POST /posts/posts/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/like => generated 16 bytes in 9 msecs (HTTP/1.1 200) 8 headers in 242 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 138/138] 118.37.174.134 () {46 vars in 756 bytes} [Wed Jul  9 15:38:54 2025] POST /posts/posts/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91/like => generated 16 bytes in 9 msecs (HTTP/1.1 200) 8 headers in 242 bytes (1 switches on core 0)
+Method Not Allowed: /posts/posts/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91
+[pid: 16582|app: 0|req: 139/139] 118.37.174.134 () {46 vars in 746 bytes} [Wed Jul  9 15:38:57 2025] POST /posts/posts/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91 => generated 69 bytes in 3 msecs (HTTP/1.1 405) 8 headers in 271 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 140/140] 118.37.174.134 () {46 vars in 745 bytes} [Wed Jul  9 15:39:01 2025] GET /posts/posts/f4fb4f6d-a5ca-48a3-95c9-f608a4c2ba91 => generated 190 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 141/141] 118.37.174.134 () {40 vars in 553 bytes} [Wed Jul  9 15:39:06 2025] GET /myforest => generated 0 bytes in 6 msecs (HTTP/1.1 301) 3 headers in 110 bytes (1 switches on core 0)
+Internal Server Error: /myforest/
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myForest_myforest
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 384, in __iter__
+    self._fetch_all()
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myForest_myforest
+[pid: 16582|app: 0|req: 142/142] 118.37.174.134 () {42 vars in 609 bytes} [Wed Jul  9 15:39:06 2025] GET /myforest/ => generated 158063 bytes in 47 msecs (HTTP/1.1 500) 7 headers in 243 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 143/143] 118.37.174.134 () {46 vars in 665 bytes} [Wed Jul  9 15:39:16 2025] GET /myforest => generated 0 bytes in 5 msecs (HTTP/1.1 301) 3 headers in 110 bytes (1 switches on core 0)
+Internal Server Error: /myforest/
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myForest_myforest
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/rest_framework/serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 384, in __iter__
+    self._fetch_all()
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/myvenv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myForest_myforest
+[pid: 16582|app: 0|req: 144/144] 118.37.174.134 () {44 vars in 639 bytes} [Wed Jul  9 15:39:16 2025] GET /myforest/ => generated 158199 bytes in 50 msecs (HTTP/1.1 500) 7 headers in 243 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 145/145] 118.37.174.134 () {44 vars in 949 bytes} [Wed Jul  9 15:39:50 2025] GET /admin/myForest/myforest/ => generated 11399 bytes in 15 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 146/146] 118.37.174.134 () {42 vars in 767 bytes} [Wed Jul  9 15:39:51 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 147/147] 118.37.174.134 () {44 vars in 942 bytes} [Wed Jul  9 15:39:53 2025] GET /admin/posts/post/ => generated 13221 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 148/148] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:39:53 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 149/149] 118.37.174.134 () {44 vars in 949 bytes} [Wed Jul  9 15:39:54 2025] GET /admin/myForest/myforest/ => generated 11399 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 150/150] 118.37.174.134 () {42 vars in 767 bytes} [Wed Jul  9 15:39:54 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 151/151] 118.37.174.134 () {46 vars in 665 bytes} [Wed Jul  9 15:39:56 2025] GET /myforest => generated 0 bytes in 5 msecs (HTTP/1.1 301) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 152/152] 118.37.174.134 () {44 vars in 639 bytes} [Wed Jul  9 15:39:56 2025] GET /myforest/ => generated 2 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 246 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 153/153] 118.37.174.134 () {40 vars in 553 bytes} [Wed Jul  9 15:40:24 2025] GET /myforest => generated 0 bytes in 5 msecs (HTTP/1.1 301) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 154/154] 118.37.174.134 () {42 vars in 609 bytes} [Wed Jul  9 15:40:24 2025] GET /myforest/ => generated 2 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 246 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 155/155] 118.37.174.134 () {44 vars in 956 bytes} [Wed Jul  9 15:40:43 2025] GET /admin/myForest/myforest/ => generated 11399 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 156/156] 118.37.174.134 () {42 vars in 767 bytes} [Wed Jul  9 15:40:43 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 157/157] 118.37.174.134 () {44 vars in 964 bytes} [Wed Jul  9 15:41:49 2025] GET /admin/myForest/myforest/add/ => generated 16746 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 158/158] 118.37.174.134 () {42 vars in 771 bytes} [Wed Jul  9 15:41:49 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 159/159] 118.37.174.134 () {44 vars in 956 bytes} [Wed Jul  9 15:41:53 2025] GET /admin/myForest/myforest/ => generated 11399 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 160/160] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:42:25 2025] GET /posts/posts => generated 96 bytes in 1 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Forbidden: /posts/posts
+[pid: 16582|app: 0|req: 161/161] 118.37.174.134 () {42 vars in 720 bytes} [Wed Jul  9 15:42:25 2025] GET /posts/posts => generated 96 bytes in 0 msecs (HTTP/1.1 403) 9 headers in 312 bytes (1 switches on core 0)
+Not Found: /posts/posts/1
+[pid: 16582|app: 0|req: 162/162] 118.37.174.134 () {42 vars in 724 bytes} [Wed Jul  9 15:42:43 2025] GET /posts/posts/1 => generated 3665 bytes in 6 msecs (HTTP/1.1 404) 8 headers in 281 bytes (1 switches on core 0)
+Not Found: /posts/posts/1
+[pid: 16582|app: 0|req: 163/163] 118.37.174.134 () {42 vars in 724 bytes} [Wed Jul  9 15:42:43 2025] GET /posts/posts/1 => generated 3665 bytes in 5 msecs (HTTP/1.1 404) 8 headers in 281 bytes (1 switches on core 0)
+Not Found: /posts/posts/4
+[pid: 16582|app: 0|req: 164/164] 118.37.174.134 () {42 vars in 724 bytes} [Wed Jul  9 15:42:46 2025] GET /posts/posts/4 => generated 3665 bytes in 5 msecs (HTTP/1.1 404) 8 headers in 281 bytes (1 switches on core 0)
+Not Found: /posts/posts/4
+[pid: 16582|app: 0|req: 165/165] 118.37.174.134 () {42 vars in 724 bytes} [Wed Jul  9 15:42:46 2025] GET /posts/posts/4 => generated 3665 bytes in 5 msecs (HTTP/1.1 404) 8 headers in 281 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 166/166] 118.37.174.134 () {46 vars in 665 bytes} [Wed Jul  9 15:43:47 2025] GET /myforest => generated 0 bytes in 5 msecs (HTTP/1.1 301) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 167/167] 118.37.174.134 () {44 vars in 639 bytes} [Wed Jul  9 15:43:47 2025] GET /myforest/ => generated 2 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 246 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 168/168] 118.37.174.134 () {42 vars in 850 bytes} [Wed Jul  9 15:48:01 2025] GET /admin/ => generated 11803 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+Not Found: /
+[pid: 16582|app: 0|req: 169/169] 118.37.174.134 () {42 vars in 838 bytes} [Wed Jul  9 15:48:05 2025] GET / => generated 2625 bytes in 5 msecs (HTTP/1.1 404) 7 headers in 229 bytes (1 switches on core 0)
+Not Found: /
+[pid: 16582|app: 0|req: 170/170] 118.37.174.134 () {44 vars in 881 bytes} [Wed Jul  9 15:48:17 2025] GET / => generated 2625 bytes in 5 msecs (HTTP/1.1 404) 7 headers in 229 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 171/171] 118.37.174.134 () {44 vars in 956 bytes} [Wed Jul  9 15:49:26 2025] GET /admin/myForest/myforest/ => generated 11399 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 172/172] 118.37.174.134 () {42 vars in 767 bytes} [Wed Jul  9 15:49:26 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 173/173] 118.37.174.134 () {44 vars in 942 bytes} [Wed Jul  9 15:49:27 2025] GET /admin/posts/post/ => generated 13221 bytes in 18 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 174/174] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:49:27 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 175/175] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:49:28 2025] GET /admin/trees/tree/ => generated 12925 bytes in 16 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 176/176] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:49:28 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 177/177] 118.37.174.134 () {44 vars in 945 bytes} [Wed Jul  9 15:49:29 2025] GET /admin/users/character/ => generated 15830 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 178/178] 118.37.174.134 () {42 vars in 765 bytes} [Wed Jul  9 15:49:29 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 179/179] 118.37.174.134 () {44 vars in 940 bytes} [Wed Jul  9 15:49:30 2025] GET /admin/users/user/ => generated 17129 bytes in 23 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 180/180] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:49:30 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Not Found: /
+[pid: 16582|app: 0|req: 181/181] 185.218.84.47 () {32 vars in 342 bytes} [Wed Jul  9 15:55:23 2025] GET / => generated 2617 bytes in 5 msecs (HTTP/1.1 404) 7 headers in 229 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 182/182] 118.37.174.134 () {44 vars in 935 bytes} [Wed Jul  9 15:55:30 2025] GET /admin/trees/tree/ => generated 12925 bytes in 15 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 183/183] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 15:55:30 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+Method Not Allowed: /users/signup
+[pid: 16582|app: 0|req: 184/184] 118.37.174.134 () {38 vars in 507 bytes} [Wed Jul  9 16:03:17 2025] GET /users/signup => generated 68 bytes in 1 msecs (HTTP/1.1 405) 8 headers in 266 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 185/185] 118.37.174.134 () {44 vars in 957 bytes} [Wed Jul  9 16:04:11 2025] GET /admin/ => generated 11803 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 186/186] 118.37.174.134 () {44 vars in 938 bytes} [Wed Jul  9 16:05:49 2025] GET /admin/myForest/myforest/ => generated 11399 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 187/187] 118.37.174.134 () {42 vars in 767 bytes} [Wed Jul  9 16:05:49 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 188/188] 118.37.174.134 () {44 vars in 957 bytes} [Wed Jul  9 16:05:51 2025] GET /admin/ => generated 11803 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 189/189] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 16:06:03 2025] GET /admin/trees/tree/ => generated 12925 bytes in 15 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 190/190] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 16:06:03 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 191/191] 118.37.174.134 () {44 vars in 957 bytes} [Wed Jul  9 16:06:05 2025] GET /admin/ => generated 11803 bytes in 14 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 192/192] 118.37.174.134 () {44 vars in 924 bytes} [Wed Jul  9 16:08:14 2025] GET /admin/trees/tree/ => generated 12925 bytes in 15 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 16582|app: 0|req: 193/193] 118.37.174.134 () {42 vars in 760 bytes} [Wed Jul  9 16:08:14 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
