@@ -29,7 +29,7 @@ class PostSerializer(serializers.ModelSerializer):
         model = Post
         fields = [
             'post_id', 'user', 'tree', 'tree_id',
-            'content', 'post_latitude', 'post_longitude',
+            'content', "is_private",
             'like_count', 'cheer_count', 'created_at'
         ]
         read_only_fields = ['post_id', 'user', 'tree', 'like_count', 'cheer_count', 'created_at']
