@@ -12,7 +12,7 @@ from django.db.models import F
 
 class PostListCreateView(ListCreateAPIView):
     """
-    GET  /posts/ → 로그인한 사용자가 쓴 전체 포스트 조회
+    GET  /posts/ → 해당 나무에 적힌 기록들 조회 
     POST /posts/ → 새 포스트 생성
     """
     serializer_class = PostSerializer
@@ -20,8 +20,8 @@ class PostListCreateView(ListCreateAPIView):
     permission_classes = [IsAuthenticated]
     
     def get_queryset(self):
-        # 로그인한 사용자(request.user) 포스트만 리턴
-        return Post.objects.filter(user_id=self.request.user)
+        # 해당된 나무의 기록들 조회 
+        return Post.objects.all() # 고정된 나무(인하대) 
 
     def perform_create(self, serializer):
         # 저장할 때 user_id 필드에도 현재 사용자 지정
