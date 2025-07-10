@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import myForest
 
-# Register your models here.
+@admin.register(myForest)
+class MyForestAdmin(admin.ModelAdmin):
+    list_display = ('user_id', 'tree_id')

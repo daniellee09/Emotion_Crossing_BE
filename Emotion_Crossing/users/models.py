@@ -14,7 +14,11 @@ class Character(models.Model):
 class User(models.Model):
     user_id = models.UUIDField(primary_key = True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=20)
-    profile_character = models.ForeignKey('Character', null=False, blank=False, on_delete=models.PROTECT)
+    profile_character = models.ForeignKey(Character, null=False, blank=False, on_delete=models.PROTECT)
     
+    @property
+    def is_authenticated(self):
+        # 헤더 기반 인증이니까, 이 User 객체가 있으면 인증된 것으로 간주
+        return True
     def __str__(self):
         return f"{self.name} ({self.user_id})"

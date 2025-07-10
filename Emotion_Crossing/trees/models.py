@@ -14,4 +14,4 @@ class Tree(models.Model):
         verbose_name_plural = "Trees"
 
     def __str__(self):
-        return f"Tree {self.tree_id} @ ({self.latitude:.4f}, {self.longitude:.4f})"
+        return f"Tree {self.tree_id} @ ({self.latitude:.7f}, {self.longitude:.7f})"
