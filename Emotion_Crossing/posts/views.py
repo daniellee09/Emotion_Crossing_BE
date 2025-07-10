@@ -32,6 +32,11 @@ class PostDetailView(RetrieveDestroyAPIView):
     authentication_classes = [UserIDAuthentication]
     permission_classes = [IsAuthenticated]
 
+    def retrieve(self, request, *args, **kwargs):
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, context={'request': request})
+        return Response(serializer.data)
+    
     def destroy(self, request, *args, **kwargs):
         post = self.get_object()
         if post.user_id != request.user:
