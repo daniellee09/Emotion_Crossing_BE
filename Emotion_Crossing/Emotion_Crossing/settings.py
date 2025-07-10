@@ -69,8 +69,8 @@ CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
     "https://emotioncrossing.p-e.kr",
-    "http://emotioncrossing.p-e.kr",
-    "http://localhost:5173",
+    #"http://emotioncrossing.p-e.kr",
+    #"http://localhost:5173",
     "http://localhost:8000",
     "https://localhost:8000",
     "https://incandescent-kelpie-d2a6ad.netlify.app",
