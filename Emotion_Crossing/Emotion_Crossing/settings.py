@@ -67,15 +67,16 @@ MIDDLEWARE = [
 
 CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOWED_ORIGINS = [
-    "https://emotioncrossing.p-e.kr",
-    "http://emotioncrossing.p-e.kr",
-    "http://localhost:5173",
-    "https://localhost:5173",
-    "http://localhost:8000",
-    "https://localhost:8000",
-    "https://incandescent-kelpie-d2a6ad.netlify.app",
-]
+CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOWED_ORIGINS = [
+#     "https://emotioncrossing.p-e.kr",
+#     "http://emotioncrossing.p-e.kr",
+#     "http://localhost:5173",
+#     "https://localhost:5173",
+#     "http://localhost:8000",
+#     "https://localhost:8000",
+#     "https://incandescent-kelpie-d2a6ad.netlify.app",
+# ]
 
 CORS_ALLOWED_METHODS = list(default_methods)
 
