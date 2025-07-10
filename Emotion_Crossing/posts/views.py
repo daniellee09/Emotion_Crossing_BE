@@ -51,6 +51,11 @@ class PostLikeView(APIView):
 
     def post(self, request, post_id):
         post = get_object_or_404(Post, post_id=post_id)
+       
+        # ✅ 자기 글이면 공감 못 하게 막기
+        if post.user_id == request.user:
+            return Response({"detail": "자신의 글에는 공감을 누를 수 없습니다."}, status=403)
+        
         post.like_count = F('like_count') + 1  # F()표현식을 통한 원자적 증가. 이 방법으로 여러사용자가 클릭하는 경우를 대비할 수 있음
         post.save()
         post.refresh_from_db()  # DB에서 실제 값 다시 가져오기
@@ -62,6 +67,11 @@ class PostCheerView(APIView):
 
     def post(self, request, post_id):
         post = get_object_or_404(Post, post_id=post_id)
+
+        # ✅ 자기 글이면 위로 못 하게 막기
+        if post.user_id == request.user:
+            return Response({"detail": "자신의 글에는 위로를 누를 수 없습니다."}, status=403)
+        
         post.cheer_count = F('cheer_count') + 1
         post.save()
         post.refresh_from_db()
