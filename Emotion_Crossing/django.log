@@ -75,3 +75,47 @@ Method Not Allowed: /users/signup
 [pid: 79747|app: 0|req: 39/39] 118.131.180.195 () {56 vars in 1050 bytes} [Thu Jul 10 23:23:20 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
 [pid: 79747|app: 0|req: 40/40] 118.131.180.195 () {60 vars in 1351 bytes} [Thu Jul 10 23:23:26 2025] GET /admin/users/character/73ad2daa-12aa-4b4c-9bad-3499a2e2e92a/change/ => generated 13188 bytes in 15 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
 [pid: 79747|app: 0|req: 41/41] 118.131.180.195 () {56 vars in 1094 bytes} [Thu Jul 10 23:23:26 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.30 (64bit) on [Thu Jul 10 14:46:49 2025] ***
+compiled with version: 13.3.0 on 08 July 2025 06:41:08
+os: Linux-6.8.0-1029-aws #31-Ubuntu SMP Wed Apr 23 18:42:41 UTC 2025
+nodename: ip-172-31-47-192
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/myvenv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing
+your processes number limit is 3749
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/Emotion_Crossing_BE/Emotion_Crossing/uwsgi.sock fd 3
+Python version: 3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]
+PEP 405 virtualenv detected: /home/ubuntu/myvenv
+Set PythonHome to /home/ubuntu/myvenv
+Python main interpreter initialized at 0x74d9ea8a39e8
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x74d9ea8a39e8 pid: 79928 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 79928)
+spawned uWSGI worker 1 (pid: 79929, cores: 1)
+[pid: 79929|app: 0|req: 1/1] 118.131.180.195 () {56 vars in 965 bytes} [Thu Jul 10 23:47:04 2025] GET /trees/ => generated 111 bytes in 55 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 2/2] 118.131.180.195 () {56 vars in 965 bytes} [Thu Jul 10 23:47:04 2025] GET /trees/ => generated 111 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 3/3] 118.131.180.195 () {56 vars in 965 bytes} [Thu Jul 10 23:47:11 2025] GET /trees/ => generated 111 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 4/4] 118.131.180.195 () {56 vars in 965 bytes} [Thu Jul 10 23:47:11 2025] GET /trees/ => generated 111 bytes in 23 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 5/5] 118.131.180.195 () {56 vars in 1012 bytes} [Thu Jul 10 23:47:22 2025] GET /users/signup/characters => generated 1517 bytes in 6 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 6/6] 118.131.180.195 () {56 vars in 1012 bytes} [Thu Jul 10 23:47:22 2025] GET /users/signup/characters => generated 1517 bytes in 6 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 7/7] 118.131.180.195 () {62 vars in 1106 bytes} [Thu Jul 10 23:47:27 2025] POST /users/signup => generated 261 bytes in 10 msecs (HTTP/1.1 201) 9 headers in 308 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 8/8] 118.131.180.195 () {56 vars in 965 bytes} [Thu Jul 10 23:47:28 2025] GET /trees/ => generated 111 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 9/9] 118.131.180.195 () {56 vars in 965 bytes} [Thu Jul 10 23:47:28 2025] GET /trees/ => generated 111 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 10/10] 118.131.180.195 () {56 vars in 975 bytes} [Thu Jul 10 23:47:29 2025] GET /posts/posts => generated 4743 bytes in 25 msecs (HTTP/1.1 200) 8 headers in 255 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 11/11] 118.131.180.195 () {56 vars in 975 bytes} [Thu Jul 10 23:47:29 2025] GET /posts/posts => generated 4743 bytes in 22 msecs (HTTP/1.1 200) 8 headers in 255 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 12/12] 118.131.180.195 () {56 vars in 965 bytes} [Thu Jul 10 23:47:32 2025] GET /trees/ => generated 111 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+[pid: 79929|app: 0|req: 13/13] 118.131.180.195 () {56 vars in 965 bytes} [Thu Jul 10 23:47:32 2025] GET /trees/ => generated 111 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
