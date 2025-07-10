@@ -66,6 +66,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    "https://emotioncrossing.p-e.kr",
     "http://emotioncrossing.p-e.kr",
     "http://localhost:5173",
     "http://localhost:8000",
