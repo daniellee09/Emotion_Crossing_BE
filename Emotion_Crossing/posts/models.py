@@ -25,3 +25,20 @@ class Post(models.Model):
     def __str__(self):
         ## self.user -> self.user_id로 수정 
         return f"{self.user_id.name} | {self.post_id} | {self.created_at:%Y-%m-%d %H:%M}"
+    
+
+class PostLike(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, help_text="공감을 누른 사용자")
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, help_text="공감한 글")
+
+    class Meta:
+        unique_together = ('user', 'post')  # 중복 방지
+        verbose_name = "Post Like"
+
+class PostCheer(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, help_text="위로를 누른 사용자")
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, help_text="위로한 글")
+
+    class Meta:
+        unique_together = ('user', 'post')  # 중복 방지
+        verbose_name = "Post Cheer"

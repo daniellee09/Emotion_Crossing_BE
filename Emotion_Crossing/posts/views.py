@@ -2,12 +2,13 @@ from django.shortcuts import render, get_object_or_404
 from rest_framework.generics import ListCreateAPIView, RetrieveDestroyAPIView
 from users.authentication import UserIDAuthentication
 from .serializers import PostSerializer
-from .models import Post
+from .models import Post, PostLike, PostCheer
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.db.models import F
+from django.db import IntegrityError
 
 
 class PostListCreateView(ListCreateAPIView):
@@ -44,22 +45,24 @@ class PostDetailView(RetrieveDestroyAPIView):
         return super().destroy(request, *args, **kwargs)
 
 
-# 공감하기와 위로하기 기능
 class PostLikeView(APIView):
     authentication_classes = [UserIDAuthentication]
     permission_classes = [IsAuthenticated]
 
     def post(self, request, post_id):
         post = get_object_or_404(Post, post_id=post_id)
-       
-        # ✅ 자기 글이면 공감 못 하게 막기
+
         if post.user_id == request.user:
             return Response({"detail": "자신의 글에는 공감을 누를 수 없습니다."}, status=403)
-        
-        post.like_count = F('like_count') + 1  # F()표현식을 통한 원자적 증가. 이 방법으로 여러사용자가 클릭하는 경우를 대비할 수 있음
-        post.save()
-        post.refresh_from_db()  # DB에서 실제 값 다시 가져오기
-        return Response({"like_count": post.like_count}, status=status.HTTP_200_OK)
+
+        try:
+            PostLike.objects.create(user=request.user, post=post)
+            post.like_count = F('like_count') + 1
+            post.save()
+            post.refresh_from_db()
+            return Response({"like_count": post.like_count}, status=200)
+        except IntegrityError:
+            return Response({"detail": "이미 공감한 글입니다."}, status=400)
 
 class PostCheerView(APIView):
     authentication_classes = [UserIDAuthentication]
@@ -68,11 +71,16 @@ class PostCheerView(APIView):
     def post(self, request, post_id):
         post = get_object_or_404(Post, post_id=post_id)
 
-        # ✅ 자기 글이면 위로 못 하게 막기
+        # ✅ 자신의 글이면 위로 금지
         if post.user_id == request.user:
             return Response({"detail": "자신의 글에는 위로를 누를 수 없습니다."}, status=403)
-        
-        post.cheer_count = F('cheer_count') + 1
-        post.save()
-        post.refresh_from_db()
-        return Response({"cheer_count": post.cheer_count}, status=status.HTTP_200_OK)
+
+        # ✅ 중복 위로 방지
+        try:
+            PostCheer.objects.create(user=request.user, post=post)
+            post.cheer_count = F('cheer_count') + 1
+            post.save()
+            post.refresh_from_db()
+            return Response({"cheer_count": post.cheer_count}, status=200)
+        except IntegrityError:
+            return Response({"detail": "이미 위로한 글입니다."}, status=400)
