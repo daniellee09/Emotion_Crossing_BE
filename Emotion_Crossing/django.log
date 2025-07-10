@@ -56,3 +56,22 @@ Not Found: /
 [pid: 79747|app: 0|req: 23/23] 118.131.180.195 () {54 vars in 888 bytes} [Thu Jul 10 23:19:48 2025] OPTIONS /trees/ => generated 0 bytes in 0 msecs (HTTP/1.1 200) 7 headers in 355 bytes (1 switches on core 0)
 [pid: 79747|app: 0|req: 24/24] 118.131.180.195 () {54 vars in 885 bytes} [Thu Jul 10 23:19:50 2025] OPTIONS /trees/ => generated 0 bytes in 0 msecs (HTTP/1.1 200) 7 headers in 355 bytes (1 switches on core 0)
 [pid: 79747|app: 0|req: 25/25] 118.131.180.195 () {54 vars in 885 bytes} [Thu Jul 10 23:19:50 2025] OPTIONS /trees/ => generated 0 bytes in 0 msecs (HTTP/1.1 200) 7 headers in 355 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 26/26] 118.131.180.195 () {54 vars in 885 bytes} [Thu Jul 10 23:19:57 2025] OPTIONS /trees/ => generated 0 bytes in 0 msecs (HTTP/1.1 200) 7 headers in 355 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 27/27] 118.131.180.195 () {54 vars in 885 bytes} [Thu Jul 10 23:19:57 2025] OPTIONS /trees/ => generated 0 bytes in 0 msecs (HTTP/1.1 200) 7 headers in 355 bytes (1 switches on core 0)
+Method Not Allowed: /users/signup
+[pid: 79747|app: 0|req: 28/28] 118.131.180.195 () {50 vars in 834 bytes} [Thu Jul 10 23:20:01 2025] GET /users/signup => generated 68 bytes in 1 msecs (HTTP/1.1 405) 9 headers in 318 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 29/29] 118.131.180.195 () {54 vars in 888 bytes} [Thu Jul 10 23:20:23 2025] OPTIONS /trees/ => generated 0 bytes in 0 msecs (HTTP/1.1 200) 7 headers in 355 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 30/30] 118.131.180.195 () {54 vars in 888 bytes} [Thu Jul 10 23:20:23 2025] OPTIONS /trees/ => generated 0 bytes in 0 msecs (HTTP/1.1 200) 7 headers in 355 bytes (1 switches on core 0)
+Not Found: /
+[pid: 79747|app: 0|req: 31/31] 34.147.88.45 () {38 vars in 524 bytes} [Thu Jul 10 23:20:26 2025] GET / => generated 2775 bytes in 5 msecs (HTTP/1.1 404) 7 headers in 229 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 32/32] 118.131.180.195 () {44 vars in 687 bytes} [Thu Jul 10 23:20:40 2025] GET /users/signup/characters => generated 1517 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 256 bytes (1 switches on core 0)
+Method Not Allowed: /users/signup
+[pid: 79747|app: 0|req: 33/33] 118.131.180.195 () {50 vars in 834 bytes} [Thu Jul 10 23:22:41 2025] GET /users/signup => generated 68 bytes in 1 msecs (HTTP/1.1 405) 9 headers in 318 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 34/34] 118.131.180.195 () {60 vars in 1351 bytes} [Thu Jul 10 23:23:17 2025] GET /admin/users/character/8b69f223-847c-4048-84d3-126c1609fe3b/change/ => generated 13183 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 35/35] 118.131.180.195 () {56 vars in 1094 bytes} [Thu Jul 10 23:23:17 2025] GET /admin/jsi18n/ => generated 9860 bytes in 5 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 36/36] 118.131.180.195 () {60 vars in 1307 bytes} [Thu Jul 10 23:23:19 2025] GET /admin/users/character/ => generated 15830 bytes in 20 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 37/37] 118.131.180.195 () {56 vars in 1050 bytes} [Thu Jul 10 23:23:19 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 38/38] 118.131.180.195 () {60 vars in 1263 bytes} [Thu Jul 10 23:23:20 2025] GET /admin/users/character/ => generated 15830 bytes in 19 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 39/39] 118.131.180.195 () {56 vars in 1050 bytes} [Thu Jul 10 23:23:20 2025] GET /admin/jsi18n/ => generated 9860 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 40/40] 118.131.180.195 () {60 vars in 1351 bytes} [Thu Jul 10 23:23:26 2025] GET /admin/users/character/73ad2daa-12aa-4b4c-9bad-3499a2e2e92a/change/ => generated 13188 bytes in 15 msecs (HTTP/1.1 200) 10 headers in 479 bytes (1 switches on core 0)
+[pid: 79747|app: 0|req: 41/41] 118.131.180.195 () {56 vars in 1094 bytes} [Thu Jul 10 23:23:26 2025] GET /admin/jsi18n/ => generated 9860 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
