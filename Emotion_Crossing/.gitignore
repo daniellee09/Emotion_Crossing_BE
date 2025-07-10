@@ -4,4 +4,5 @@ venv
 migrations
 .DS_Store
 *.pyc
+django.log
 
